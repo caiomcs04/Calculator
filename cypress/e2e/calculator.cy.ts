@@ -16,7 +16,6 @@ describe('Basic commands', () => {
     cy.get('[data-test="results"]').should('have.value', '0123456789');
   });
 
-  // Must fail to workshop
   it('Math buttons', () => {
     cy.visit('');
 
@@ -58,10 +57,6 @@ describe('Basic commands', () => {
     cy.contains('button', 'AC').should('be.visible').click();
 
     cy.get('[data-test="results"]').should('have.value', '');
-
-
-
-
 
   });
 });
@@ -259,7 +254,6 @@ describe('Decimals', () => {
     cy.get('[data-test="results"]').should('have.value', '3.80');
   });
 
-  // Must fail
   it('Subtract 2 decimals', () => {
     cy.visit('');
 
