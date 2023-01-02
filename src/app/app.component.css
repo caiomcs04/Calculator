@@ -1,0 +1,52 @@
+.calculator {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calculator input[type="text"] {
+  width: 92%;
+  font-size: 2em;
+  line-height: 1;
+  margin-bottom: 1em;
+  border: none;
+  background: #ddd;
+  text-align: right;
+  padding: 1em;
+}
+
+.calculator .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.calculator .buttons button {
+  width: 25%;
+  font-size: 1.5em;
+  padding: 1em;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.calculator .buttons button:hover {
+  background: #ddd;
+}
+
+@media (max-width: 600px) {
+  .calculator .buttons button {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator .buttons button {
+    width: 100%;
+  }
+}
+
+
+
+

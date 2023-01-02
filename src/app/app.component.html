@@ -1,0 +1,10 @@
+<div class="calculator">
+  <input type="text" [(ngModel)]="displayValue" disabled data-test="results">
+  <div class="buttons">
+    <button *ngFor="let button of buttons" (click)="handleButtonClick(button)" >
+      <div *ngIf="button.disabled === false">
+        {{button.label}}
+      </div>
+    </button>
+  </div>
+</div>
