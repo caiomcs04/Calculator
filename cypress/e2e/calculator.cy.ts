@@ -2,7 +2,7 @@ beforeEach(() => {
     cy.visit("/")
 })
 
-describe ("Operation", () => {
+describe ("sOperation", () => {
     /**
      * gherkin
      * Scenario: Should add two numbers
