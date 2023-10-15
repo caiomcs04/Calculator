@@ -1,8 +1,8 @@
 <div class="calculator">
-  <input type="text" [(ngModel)]="displayValue" disabled data-test="results">
+  <input type="text" [(ngModel)]="displayValue" disabled >
   <div class="buttons">
     <button *ngFor="let button of buttons" (click)="handleButtonClick(button)" >
-      <div *ngIf="button.disabled === false" [appDataTest]="button.label">
+      <div *ngIf="button.disabled === false" >
         {{button.label}}
       </div>
     </button>
