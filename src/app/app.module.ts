@@ -3,10 +3,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { DataTestDirective } from './directive/data-test.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataTestDirective
   ],
   imports: [
     BrowserModule,FormsModule

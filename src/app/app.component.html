@@ -2,7 +2,7 @@
   <input type="text" [(ngModel)]="displayValue" disabled data-test="results">
   <div class="buttons">
     <button *ngFor="let button of buttons" (click)="handleButtonClick(button)" >
-      <div *ngIf="button.disabled === false">
+      <div *ngIf="button.disabled === false" [appDataTest]="button.label">
         {{button.label}}
       </div>
     </button>
